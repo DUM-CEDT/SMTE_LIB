@@ -14,7 +14,7 @@ app.use(express.json())
 
 app.use(
   cors ({
-    origin : "http://localhost:3100",
+    origin : "https://frontend-pzzl.onrender.com/",
     credential : true,
   })
 )
