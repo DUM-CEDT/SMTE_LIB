@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+    <title>Export</title>
+    <link rel="stylesheet" href="../CSS/Export.css">
+</head>
+<body>
+    <div id="container">
+        <label id="header-label">ข้อมูลการยืมหนังสือของห้องสมุดห้องเรียนพิเศษฯ</label>
+        <div id="Date-wrapper">
+            <label class="template">วันที่</label>
+            <label id="date-label"></label>
+            <label id="month-label"></label>
+            <label id="year-label"></label>
+        </div>
+        
+        <div id="upper-content">
+            <label class = "header-template">จำนวนการยืมแบ่งตามระดับชั้น</label>
+            <table id="by-grade-tabel">
+                <tr>
+                  <th>ชั้น</th>
+                  <th>จำนวนการยืม</th>
+                </tr>
+              </table>
+        </div>
+
+        <div id="lower-content">
+            <div id="upper-tabel-wrapper">
+                <label class = "header-template">ชนิดหนังสือที่ถูกยืมมากที่สุด 3 อันดับ</label>
+                <table id="by-subject-tabel">
+                    <tr>
+                      <th>อันดับ</th>
+                      <th>ประเภทหนังสือ</th>
+                      <th>จำนวนการยืม</th>
+                    </tr>
+                  </table>
+            </div>
+            <div id="lower-tabel-wrapper">
+                <label class = "header-template">นักเรียนที่ยืมหนังสือมากที่สุด 3 อันดับ</label>
+                <table id="top-lender-tabel">
+                    <tr>
+                      <th>อันดับ</th>
+                      <th>ชื่อนักเรียน</th>
+                      <th>จำนวนการยืม</th>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+
+    </div>
+    <script type="module" src="../JS/LendTodayExp.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/Bookinfo.css">
+</head>
+<body>
+    <div hidden="hidden" id="bookid" class = "<%=bookid%>"></div> 
+    <div id="noti-bar" class="noti-bar-hidden"></div>
+    <div id="container1">
+        <div id="upper-wrapper">
+            <div id="inform-card">
+                <label id="book-id-template">รหัสหนังสือ</label>
+                <label id="book-name-template">ชื่อหนังสือ</label>
+                <label id="book-type-template">ชนิดหนังสือ</label>
+                <label id="islending-template">สถานะ</label>
+                <label id="line"></label>
+                <label id="book-id-label"></label>
+                <label id="book-name-label"></label>
+                <label id="book-type-label"></label>
+                <label id="islending-label"></label>
+                
+            </div>
+            <div id="op-card">
+                
+                <button id="edit-button">แก้ไขข้อมูล</button>
+                <button id="delete-button">ลบข้อมูล</button>
+            </div>
+        </div>
+
+        <div id="lower-wrapper">
+            <label id="head-label">ประวัติการถูกยืม</label>
+            <div class="block" id="header-template">
+                <div class="text-wrapper"><label>ชื่อผู้ยืม</label></div>
+                <div class="text-wrapper"><label>วันที่ยืม</label></div>
+                <div class="text-wrapper"><label>วันที่คืน</label></div>
+            </div>
+            <div id="block-wrapper">
+            </div>
+
+            <div id="back-button"></div>
+        </div>
+    </div>
+    <script type="module" src="../JS/Bookinfo.js"></script>
+</body>
+</html>

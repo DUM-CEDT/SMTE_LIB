@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/Studentinfo.css">
+</head>
+<body>
+    <div hidden="hidden" id="studentid" class = "<%=studentid%>"></div> 
+    <div id="noti-bar" class="noti-bar-hidden"></div>
+    <div id="container1">
+        <div id="upper-wrapper">
+            <div id="inform-card">
+                <label id="student-id-template">รหัสนักเรียน</label>
+                <label id="student-name-template">ชื่อ-นามสกุล</label>
+                <label id="student-class-template">ชั้น</label>
+                <label id="student-phone-template">เบอร์โทรศัพท์</label>
+                <label id="line"></label>
+                <label id="student-id-label"></label>
+                <label id="student-name-label"></label>
+                <label id="student-class-label"></label>
+                <label id="student-phone-label"></label>
+                
+            </div>
+            <div id="op-card">
+                
+                <button id="edit-button">แก้ไขข้อมูล</button>
+                <button id="delete-button">ลบข้อมูล</button>
+            </div>
+        </div>
+
+        <div id="lower-wrapper">
+            <label id="head-label">ประวัติการยืมหนังสือ</label>
+            <div class="block" id="header-template">
+                <div class="text-wrapper"><label>ชื่อหนังสือ</label></div>
+                <div class="text-wrapper"><label>วันที่ยืม</label></div>
+                <div class="text-wrapper"><label>วันที่คืน</label></div>
+            </div>
+            <div id="block-wrapper">
+            </div>
+
+            <div id="back-button"></div>
+        </div>
+    </div>
+    <script type="module" src="../JS/Studentinfo.js"></script>
+</body>
+</html>

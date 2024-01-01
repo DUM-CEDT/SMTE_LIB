@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้าหลัก</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/Dashboard.css">
+</head>
+
+<body>
+    <div id="upper-wrapper">
+        <label id="STAT LABEL">สถิติการยืมหนังสือ</label>
+        <div id="stat-wrapper">
+            <div class="lend-stat-box" id="daily">
+                <h2>วันนี้</h2>
+                <label id="daily-lending-label"></label>
+            </div>
+            <div class="lend-stat-box" id="weekly">
+                <h2>สัปดาห์นี้</h2>
+                <label id="weekly-lending-label"></label>
+            </div>
+            <div class="lend-stat-box" id="monthly">
+                <h2>เดือนนี้</h2>
+                <label id="monthly-lending-label"></label>
+            </div>
+            <div class="lend-stat-box" id="yearly">
+                <h2>ปีนี้</h2>
+                <label id="yearly-lending-label"></label>
+            </div>
+        </div>
+    </div>
+    <div id="lower-wrapper">
+        <div id="grid-wrapper">
+            <div class="general-stat-cnt" id="total-student-box">
+                <h2>นักเรียนทั้งหมด</h2>
+                <label id="total-student-label"></label>
+            </div>
+            <div class="general-stat-cnt" id="total-book-box">
+                <h2>หนังสือทั้งหมด</h2>
+                <label id="total-book-label"></label>
+            </div>
+            <div class="general-stat-cnt" id="lending-book-box">
+                <h2>หนังสือกำลังถูกยืม</h2>
+                <label id="total-lending-label"></label>
+            </div>
+            <div class="general-stat-cnt" id="non-return-book-box">
+                <h2>หนังสือยืมเกินกำหนด</h2>
+                <label id="non-return-label"></label>
+            </div>
+            <div id="must-return-today">
+                <h2>หนังสือที่ต้องคืนวันนี้</h2>
+                <label id="must-return-today-label"></label>
+            </div>
+            <button id="lend-book-button" class="action-button">
+                <h2>ยืมหนังสือ</h2>
+            </button>
+            <button id="return-book-button" class="action-button">
+                <h2>คืนหนังสือ</h2>
+            </bdiv>
+        </div>
+    </div>
+
+
+    <script type="module" src="./JS/Dashboard.js"></script>
+</body>
+
+</html>

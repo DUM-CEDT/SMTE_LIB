@@ -1,0 +1,292 @@
+* {
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: #FCE7DC;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#upper-wrapper {
+    width: 65%;
+    height: 30%;
+    background-color: white;
+    margin: 2% 0 3% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+#upper-wrapper label {
+    margin: 0 0 2% 0;
+    font-size: calc(1vh + 1vw)  ;
+}
+
+.lend-stat-box h2 {
+    margin: 0 0 0 0;
+    font-size: min(25px , calc(0.75 * (1vh + 1.5vw)));
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#stat-wrapper {
+    width: 80%;
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    grid-template-areas: 
+    "daily weekly monthly yearly";
+
+    column-gap: 5%;
+
+}
+
+.lend-stat-box {
+    border-radius: 15px;
+    width: 80%;
+    aspect-ratio: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.lend-stat-box label {
+    margin: 0;
+    font-size: min(40px , calc(1 * (1vh + 2vw)));
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+#daily {
+    grid-area: daily;
+    background-color: #FFD4E9;
+}
+
+#weekly {
+    grid-area: weekly;
+    background-color: #FFBADB;
+}
+
+#monthly {
+    grid-area: monthly;
+    background-color: #F69396;
+}
+
+#yearly {
+    grid-area: yearly;
+    background-color: #CF8F6F;
+}
+
+
+#lower-wrapper {
+    width: 65%;
+    height: 55%;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#grid-wrapper {
+    
+    width: 90%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 1fr 0.75fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+    grid-template-areas: 
+    "total-student must-return-today"
+    "total-book must-return-today"
+    "lending-book lend-button"
+    "non-return-book return-button";
+    /* gap: 3%; */
+    row-gap: 3%;
+    column-gap: 5%;
+
+}
+
+#total-student-box {
+    grid-area: total-student;
+}
+
+#total-book-box {
+    grid-area: total-book;
+}
+
+#lending-book-box {
+    grid-area: lending-book;
+}
+
+#non-return-book-box {
+    grid-area: non-return-book;
+}
+
+#must-return-today {
+    grid-area: must-return-today;
+}
+
+#lend-book-button {
+    grid-area: lend-button;
+}
+
+#return-book-button {
+    grid-area: return-button;
+}
+
+
+.general-stat-cnt {
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.general-stat-cnt h2{
+    margin: 0 0 0 5%;
+    font-size: min(30px , calc(0.75 * (1vh + 2vw)));
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.general-stat-cnt label{
+    margin: 0 5% 0 0;
+    font-size: min(40px , calc(1 * (1vh + 2vw)));
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+#must-return-today h2{
+    margin: 0 0 0 0;
+    font-size: min(30px , calc(0.75 * (1vh + 2vw)));
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#must-return-today label{
+    font-size: min(40px , calc(1 * (1vh + 2vw)));
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.7);
+} 
+
+ #total-student-box , #total-book-box {
+    background-color: #8EDAFA;
+}
+
+#lending-book-box ,  #non-return-book-box {
+    background-color: #95FFF2;
+
+}
+
+#must-return-today {
+    background-color: #FFAF65;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.action-button {
+    background-color: #FFE871;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: none;
+}
+
+.action-button h2 {
+    margin: 0 0 0 0;
+    font-size: min(40px , calc(1 * (1vh + 2vw)));
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+@media screen and (max-width : 1940px){
+    .lend-stat-box {
+        width: min(18vh , 200px);
+    }
+    #stat-wrapper {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width : 1640px){
+    .lend-stat-box {
+        width: min(18vh , 100%);
+    }
+    #stat-wrapper {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width : 1440px){
+      #upper-wrapper , #lower-wrapper {
+        width: 75%;
+      }
+}
+
+@media screen and (max-width : 1240px){
+    #upper-wrapper , #lower-wrapper {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width : 1040px){
+    #upper-wrapper , #lower-wrapper {
+        width: 95%;
+    } 
+
+}
+
+/* @media screen and (max-width : 840px){
+    #stat-wrapper {
+        width: 95%;
+    }
+} */
+
+@media screen and (max-width : 640px){
+    #upper-wrapper {
+        height:35%;
+    }
+    #stat-wrapper {
+        width: min(24vh , 50%);
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "daily weekly"
+        "monthly yearly";
+        column-gap: 5%;
+        row-gap: 5%;
+        
+    }
+}
+
+@media screen and (max-width : 440px){
+    #stat-wrapper {
+        width: min(25vh , 60%);
+        /* grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "daily weekly"
+        "monthly yearly";
+        column-gap: 5%;
+        row-gap: 5%; */
+    }
+}
+
