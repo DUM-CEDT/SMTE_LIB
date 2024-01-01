@@ -7,7 +7,7 @@ import path from "path"
 import {fileURLToPath} from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
-export const BACKEND_URL = "http://localhost:3000";
+export const BACKEND_URL = "https://backend-1qnt.onrender.com/";
 export const __dirname = path.dirname(__filename);
 
 const app = express() 
